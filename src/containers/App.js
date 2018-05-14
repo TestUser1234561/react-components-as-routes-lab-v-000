@@ -1,6 +1,6 @@
 import React from 'react';
-import { 
-  BrowserRouter as Router, 
+import {
+  BrowserRouter as Router,
   Route
 } from 'react-router-dom';
 import NavBar from '../components/NavBar';
@@ -15,9 +15,9 @@ const App = (props) => {
       <div>
         <NavBar />
         <Route exact path="/" component={Home} />
-        <Route exact path="/actors" component={Actors} />
-        <Route exact path="/directors" component={Directors} />
         <Route exact path="/movies" component={Movies} />
+        <Route exact path="/directors" component={Directors} />
+        <Route exact path="/actors" component={Actors} />
       </div>
     </Router>
   );
